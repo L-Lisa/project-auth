@@ -8,7 +8,7 @@ import bcrypt from "bcrypt-nodejs"
 import User from './models/users'
 
 
-const mongoUrl = process.env.MONGO_URL || "mongodb://localhost/authAPI"
+const mongoUrl = process.env.MONGO_URL || "https://pairprogramming-login.herokuapp.com/"
 mongoose.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = Promise
 
